@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor de Biscoito - biscoitos artesanais</title>
+
+    <link rel="shortcut icon" href="imagens\logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <img src="imagens/logo.png" alt="Logotipo Amor de biscoito">
+            <h1>Amor de Biscoito</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="encomendas.html">Encomendas</a></li>
+                    <li id="cookie"><a href="contato.html" id="ativo">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="principal">
+        <p class="info-contato">Entre em contato conosco pelo <em>telefone +55 (14) 99645-4742</em> ou através do formulário de contato abaixo. <span>Lembre-se todos os campos são obrigatórios.</span></p>
+        <form action="https://formsubmit.co/eide.hermann@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_subject" value="Mensagem Formulário Amor de Biscoito!">
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required autofocus>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea cols="70" rows="10" name="mensagem" id="mensagem" required placeholder="Utilize este campo para adiantar sua encomenda ou tirar suas dúvidas."></textarea>
+            
+            <input type="submit" class="botao-enviar">   
+        </form>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <img src="imagens\logo.png" alt="Logo Amor de biscoito no rodapé">
+            <p>&copy; Copyright Amor de Biscoitos - 2022</p>
+        </div>
+    </footer>
+</body>
+</html>

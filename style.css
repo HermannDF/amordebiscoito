@@ -1,0 +1,549 @@
+/* estilização padrão para todas as páginas ( cabeçalho - rodapé) */
+body {
+    font-family: 'Cormorant Upright', serif;
+}
+
+header {
+    background: #B0C4DE;
+    border-bottom: 5px double darkcyan;
+    padding: 0.5em;
+}
+
+.caixa {
+    position: relative;
+}
+
+.caixa img {
+    vertical-align:middle;
+    width: 10em;
+    margin: 10px;
+}
+
+h1 {
+    color: darkcyan;
+    display: inline-block;
+    font-size: 3em;
+    font-weight: bold;
+    left: 3.7em;
+    margin-left: 1em;
+    position: absolute;
+    top: 27%;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    top: 85%;
+    right: 5%;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 2vmin;
+}
+
+nav a, .voltar{
+    color: #006e6e;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a:hover, .voltar:hover {
+    color:#004d4d;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color:#004d4d;
+    text-decoration:overline;
+}
+
+#cookie::before {
+    font-size: 1.4em;
+    content: "🍪";
+}
+
+#ativo {
+    color:#004d4d;
+    font-weight: bold;
+}
+
+main {
+    background: linear-gradient(#B0C4DE, #6f99c2);
+}
+
+.principal p {
+    color: #004d4d;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    text-align: justify;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.titulos {
+    clear: left;
+    color: #014b4b;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    text-align: center;
+}
+
+footer {
+    background: #6f99c2;
+    border-top: 5px double darkcyan;
+    padding: 0.5em;
+}
+
+.rodape {
+    text-align: center;
+    width: 100%;
+}
+
+footer img {
+    vertical-align:middle;
+    width: 5em;
+}
+
+footer p {
+    color: #004e4e;
+    display: inline;
+    font-style: oblique;
+    font-weight: bold;
+    margin-left: 10vmin;
+    text-decoration: underline;
+}
+
+/* Página Inicial */
+.principal {
+    padding: 3rem 2rem 0 2rem;
+}
+
+.sobre-nos, .nossos-biscoitos, .localizacao {
+    padding: 2em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fundadores {
+    border: 5px double #006e6e;
+    box-shadow: 0 0 10px #006e6e;
+    float: left;
+    margin: 0.5em 1.5em 0 0;
+    width: 180px;
+}
+
+.mapa {
+    box-shadow: 5px 7px 10px 5px #014b4b, 
+                -5px -7px 10px 4px #014b4b;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+/* Página de produtos */
+.biscoitos {
+    margin: 2rem auto 0;
+    text-align: center;
+    width: 80%;
+}
+
+.biscoitos strong {
+    font-weight: bold;
+}
+
+.produtos {
+    margin: 0 auto;
+    padding: 0 0 3vmax 6vmax;
+    width: 85%;
+}
+.produtos li {
+    display: inline-block;
+    margin: 2rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.produtos img {
+    border: 5px double #006e6e;
+    box-shadow: 0 0 10px 2px #006e6e;
+    transition: 400ms;
+    width: 10rem;
+}
+
+.produtos li:hover img {
+    transform: scale(2.5);
+}
+
+/* Página de encomendas */
+.infop {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+}
+
+.info-encomenda img{
+    border: 5px double #006e6e;
+    box-shadow: 0 0 10px 2px #006e6e;
+    float: left;
+    margin: 0.5rem 1.3rem 0 0;
+    width: 50vmin;
+}
+
+.info-encomenda a img {
+    border: none;
+    box-shadow: none;
+    float: none;
+    margin-bottom: 0.5rem;
+    text-align: right;
+    vertical-align: middle;
+    width: 10rem;
+}
+
+.info-encomenda p {
+    margin: 1em 0;
+}
+
+.info-encomenda p::before {
+    content: "🍪{";
+}
+
+.info-encomenda p::after {
+    content: "}";
+}
+
+#whats {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem;
+    text-align: right;
+}
+
+#whats::before, #whats::after {
+    content: "";
+}
+
+/* Página de contato */
+.info-contato {
+    margin: 0rem auto 1rem;
+    width: 70%;
+}
+
+.info-contato span {
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+form {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    width: 80%;
+    /* text-align: right; */
+}
+
+form input, form textarea {
+    background: none;
+    border: 1px solid #002020;
+    border-radius: 25px;
+    box-shadow: 0 0 7px #22476d;
+    display: block;
+    font-size: 1rem;
+    margin: 0.5rem auto 1rem; 
+    padding: 0.7rem 1rem;
+    width:70%;
+}
+
+form input:focus, form textarea:focus {
+    box-shadow: inset 0 0 7px #22476d;
+    outline: none;
+}
+
+#email {
+    text-transform: lowercase;
+}
+
+form label {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 2rem auto 0.6rem;
+    text-align: left;
+    width: 70%;
+}
+
+.botao-enviar {
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 10vw 2rem auto;
+    padding: 1.3rem;
+    transition: 400ms;
+    width: 13rem;
+}
+
+.botao-enviar:hover {
+    background: rgba(34, 71, 109, 0.1);
+    box-shadow: 2px 3px 4px 2px #10263b;
+    transform: scale(1.05);
+}
+
+.botao-enviar:active {
+    background: rgba(34, 71, 109, -1);
+    box-shadow: inset 3px 3px 5px #10263b;
+    transform: scale(0.95);
+}
+
+/* Confirmação de envio */
+.mail {
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.voltar, .confirmacao-envio {
+    font-weight: bold;
+    margin: 6rem auto;
+}
+
+.voltar {
+    border: 2px solid #002020;
+    border-radius: 25px;
+    box-shadow: 0 0 7px #22476d;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 0.7rem 0.8rem 1rem;
+    text-transform: capitalize;
+    transition: 400ms;
+}
+
+.voltar::before {
+    content: "🍪  ";
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    opacity: 0.8;
+}
+
+.voltar::after {
+    content: " 🍪";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    opacity: 0.8;
+}
+
+.voltar:hover {
+    background: rgba(34, 71, 109, 0.1);
+    box-shadow: 2px 3px 4px 2px #10263b;
+    transform: scale(1.05);
+    text-decoration: none;
+    opacity: 1;
+}
+
+.voltar:active {
+    background: rgba(34, 71, 109, -1);
+    box-shadow: inset 3px 3px 5px #10263b;
+    transform: scale(0.95);
+}
+
+/* Mobile */ 
+@media screen and (max-width: 800px) {
+    nav {
+        display: block;
+        position: static;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        margin: 0 0 0 1.5vmin;
+    }
+    
+    nav a {
+        font-size: 1.5em;
+    }
+
+    #cookie::before {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    nav a {
+        font-size: 1.1em;
+    }
+
+    #cookie::before {
+        font-size: 1.1em;
+    }
+
+    .caixa h1 {
+        font-size: 2.3em;
+        margin-left: 15px;
+    }
+
+    .caixa img {
+        margin-right: 5px;
+        width: 8em;
+    }
+
+    .biscoitos {
+        width: 100%;
+    }
+
+    .sobre-nos, .nossos-biscoitos, .localizacao {
+        padding: 0 0 3em;
+        width: 95%;
+    }
+
+    .info-encomenda img {
+        width: 40vmin;
+    }
+
+    .info-contato {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form label, form input, form textarea {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 636px) {
+    .produtos li {
+        margin: 1.5rem auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        border-bottom: 3px solid darkcyan;
+        padding: 0.3em;
+    }
+
+    .caixa {
+        position: relative;
+    }
+    
+    .caixa img {
+        width: 5em;
+        margin: 1px 1px 15px;
+    }
+    
+    h1 {
+        color: darkcyan;
+        display: inline-block;
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin-left: 0.1em;
+        position: static;
+    }
+    
+    nav {
+        display: block;
+        position: static;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        margin: 0 0 0 1.1vmin;
+    }
+    
+    nav a {
+        font-size: 0.8em;
+        font-weight: normal;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #cookie::before {
+        font-size: 0.9em;
+    }
+
+    .principal {
+        padding: 2em 0 0 0;
+    }
+
+    .principal p {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    
+    .titulos {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    footer {
+        padding: 0.5em 0.5em 0.5em 0.1em ;
+    }
+
+    footer p {
+        font-size: small;
+        margin-left: 2vmin;
+    }
+
+    footer img {
+        width: 3.5em;
+    }
+    
+    .sobre-nos, .nossos-biscoitos, .localizacao {
+        padding: 0 0 3em;
+        width: 90%;
+    }
+
+    .localizacao {
+        padding-bottom: 1em;
+    }
+    
+    .fundadores {
+        border: 3px double #006e6e;
+        width: 150px;
+    }
+
+    .biscoitos {
+        margin: 1rem auto 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .produtos {
+        padding: 0;
+    }
+
+    .produtos li:hover img {
+        transform: scale(1.8);
+    }
+
+    .info-encomenda img {
+        width: 35vmin;
+    }
+
+    .info-contato {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    form {
+        width: 95%;
+    }
+}
