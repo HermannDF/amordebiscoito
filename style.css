@@ -448,13 +448,14 @@ form label {
     }
     
     .caixa img {
+        display: block;
+        margin: 1px auto 15px;
         width: 5em;
-        margin: 1px 1px 15px;
     }
     
     h1 {
         color: darkcyan;
-        display: inline-block;
+        display: block;
         font-size: 1.7rem;
         font-weight: bold;
         margin-left: 0.1em;
@@ -463,6 +464,7 @@ form label {
     
     nav {
         display: block;
+        margin-top: 1em;
         position: static;
     }
 
