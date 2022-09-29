@@ -187,8 +187,14 @@ footer p {
 .infop {
     font-weight: bold;
     font-style: italic;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
     text-decoration: underline;
+    width: 90%;
+}
+
+.info-encomenda {
+    margin: 0 auto;
+    width: 90%;
 }
 
 .info-encomenda img{
@@ -523,7 +529,7 @@ form label {
     .biscoitos {
         margin: 1rem auto 0;
         text-align: center;
-        width: 100%;
+        width: 90%;
     }
 
     .produtos {
@@ -540,7 +546,7 @@ form label {
 
     .info-contato {
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
     }
 
     form {
